@@ -96,20 +96,23 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(5),
             ),
-            child: TextField(
-              decoration: InputDecoration(
-                  prefixIcon: Icon(
-                    Icons.search,
-                    size: 30,
-                  ),
-                  suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.clear_rounded),
-                  ),
-                  hintText: 'Hoodie',
-                  // fillColor: Colors.black,
-                  // iconColor: Colors.black,
-                  border: InputBorder.none),
+            child: Padding(
+              padding: const EdgeInsets.all(10),
+              child: TextField(
+                decoration: InputDecoration(
+                    prefixIcon: Icon(
+                      Icons.search,
+                      size: 30,
+                    ),
+                    suffixIcon: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.clear_rounded),
+                    ),
+                    hintText: 'Search Product..',
+                    // fillColor: Colors.black,
+                    // iconColor: Colors.black,
+                    border: InputBorder.none),
+              ),
             ),
           ),
           toolbarHeight: 80,

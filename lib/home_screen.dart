@@ -125,12 +125,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         height: 60,
                         width: 370,
-                        child: TextField(
-                            decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.search, size: 30),
-                          hintText: 'Search',
-                          border: InputBorder.none,
-                        )))),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: TextField(
+                              decoration: InputDecoration(
+                            prefixIcon: Icon(Icons.search, size: 30),
+                            hintText: 'Search',
+                            border: InputBorder.none,
+                          )),
+                        ))),
                 SizedBox(
                   height: 10,
                 ),
