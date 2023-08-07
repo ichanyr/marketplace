@@ -117,30 +117,20 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.grey[200],
-                      ),
-                      height: 60,
-                      width: 370,
-                      child: Row(children: [
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
-                        Icon(
-                          Icons.search_rounded,
-                          size: 30,
-                          color: Colors.grey,
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.grey[200],
                         ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Text(
-                          'Search Product',
-                          style: TextStyle(fontSize: 20, color: Colors.grey),
-                        ),
-                      ])),
-                ),
+                        height: 60,
+                        width: 370,
+                        child: TextField(
+                            decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.search, size: 30),
+                          hintText: 'Search',
+                          border: InputBorder.none,
+                        )))),
                 SizedBox(
                   height: 10,
                 ),
