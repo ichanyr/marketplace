@@ -55,7 +55,7 @@ class _FilterScreenState extends State<FilterScreen> {
               color: Colors.grey[200],
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
 
             //Gender

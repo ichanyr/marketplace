@@ -20,7 +20,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
           "https://elizabeth.co.id/wp-content/uploads/2023/01/0786-0002-17_2-768x768.jpg"
     },
     {
-      "title": "white sneaker with adidas logo",
+      "title": "Wallets",
       "tipe": "wallets",
       "harga": "\$255",
       "discount": "23",
@@ -123,6 +123,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
         ),
         body: SafeArea(
           child: SingleChildScrollView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             child: Column(
               children: [
                 Divider(
