@@ -1,16 +1,12 @@
-# marketplace
+# SLICING UI MARKETPLACE
 
-A new Flutter project.
+![Screenshot (1265)](https://github.com/ichanyr/marketplace/assets/114141633/78e6368d-9386-4517-b2c3-fe59711b83dc)
+![Screenshot (1266)](https://github.com/ichanyr/marketplace/assets/114141633/231270d9-6e09-41c7-8bc5-04f263b8e520)
+![Screenshot (1267)](https://github.com/ichanyr/marketplace/assets/114141633/9c75ab70-5a22-47db-924d-2246dd6dab99)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Widget yang digunakan
+- Textfield
+- Row
+- Column
+- RangeSlider
+- Divider
