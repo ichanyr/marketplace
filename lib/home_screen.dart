@@ -81,273 +81,268 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          toolbarHeight: 80, //untuk mengatur tinggi appbar
-          elevation: 0, //untuk menghilangkan garis
-          backgroundColor: Color(0XFFFFFFFF),
-          title: Text(
-            'Home',
-            style: TextStyle(
-              color: Colors.black,
-            ),
-          ),
-          centerTitle: true,
-          //leading untuk icon di depan
-          leading: Icon(
-            Icons.notifications,
+    return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 80, //untuk mengatur tinggi appbar
+        elevation: 0, //untuk menghilangkan garis
+        backgroundColor: Color(0XFFFFFFFF),
+        title: Text(
+          'Home',
+          style: TextStyle(
             color: Colors.black,
           ),
-          //action untuk icon di belakang
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.shopping_cart),
-              color: Colors.black,
-            ),
-          ],
         ),
-        backgroundColor: Colors.white,
-        body: SafeArea(
-          child: SingleChildScrollView(
-            controller: ScrollController(),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.grey[200],
-                        ),
-                        height: 60,
-                        width: 370,
-                        child: Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: TextField(
-                              decoration: InputDecoration(
-                            prefixIcon: Icon(Icons.search, size: 30),
-                            hintText: 'Search',
-                            border: InputBorder.none,
-                          )),
-                        ))),
-                SizedBox(
-                  height: 10,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
+        centerTitle: true,
+        //leading untuk icon di depan
+        leading: Icon(
+          Icons.notifications,
+          color: Colors.black,
+        ),
+        //action untuk icon di belakang
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.shopping_cart),
+            color: Colors.black,
+          ),
+        ],
+      ),
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          controller: ScrollController(),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
                   child: Container(
-                    color: Colors.white,
-                    height: 110,
-                    width: 380,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child:
-                          ListView(scrollDirection: Axis.horizontal, children: [
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              radius: 34,
-                              backgroundColor: Colors.white,
-                              child: CircleAvatar(
-                                radius: 29,
-                                backgroundImage:
-                                    AssetImage('assets/images/wallets.jpg'),
-                              ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.grey[200],
+                      ),
+                      height: 60,
+                      width: 370,
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: TextField(
+                            decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.search, size: 30),
+                          hintText: 'Search',
+                          border: InputBorder.none,
+                        )),
+                      ))),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Container(
+                  color: Colors.white,
+                  height: 110,
+                  width: 380,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child:
+                        ListView(scrollDirection: Axis.horizontal, children: [
+                      Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 34,
+                            backgroundColor: Colors.white,
+                            child: CircleAvatar(
+                              radius: 29,
+                              backgroundImage:
+                                  AssetImage('assets/images/wallets.jpg'),
                             ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text('Wallets'),
-                          ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text('Wallets'),
+                        ],
+                      ),
+                      Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
+                      Column(children: [
+                        CircleAvatar(
+                          radius: 34,
+                          backgroundColor: Colors.white,
+                          child: CircleAvatar(
+                            radius: 29,
+                            backgroundImage:
+                                AssetImage('assets/images/tas3.jpg'),
+                          ),
                         ),
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
-                        Column(children: [
-                          CircleAvatar(
-                            radius: 34,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 29,
-                              backgroundImage:
-                                  AssetImage('assets/images/tas3.jpg'),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Text('Hand Bags'),
-                        ]),
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
-                        Column(
-                          children: [
-                            CircleAvatar(
-                              radius: 34,
-                              backgroundColor: Colors.white,
-                              child: CircleAvatar(
-                                radius: 29,
-                                backgroundImage:
-                                    AssetImage('assets/images/backpacks.jpg'),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text('Backpacks'),
-                          ],
+                        const SizedBox(
+                          height: 10,
                         ),
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
-                        Column(children: [
-                          CircleAvatar(
-                            radius: 34,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 29,
-                              backgroundImage:
-                                  AssetImage('assets/images/tas1.jpg'),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Text('Sling Bags'),
-                        ]),
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
-                        Column(children: [
-                          CircleAvatar(
-                            radius: 34,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 29,
-                              backgroundImage:
-                                  AssetImage('assets/images/totebag.jpg'),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Text('Tote Bags'),
-                        ]),
+                        Text('Hand Bags'),
                       ]),
+                      Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
+                      Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 34,
+                            backgroundColor: Colors.white,
+                            child: CircleAvatar(
+                              radius: 29,
+                              backgroundImage:
+                                  AssetImage('assets/images/backpacks.jpg'),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text('Backpacks'),
+                        ],
+                      ),
+                      Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
+                      Column(children: [
+                        CircleAvatar(
+                          radius: 34,
+                          backgroundColor: Colors.white,
+                          child: CircleAvatar(
+                            radius: 29,
+                            backgroundImage:
+                                AssetImage('assets/images/tas1.jpg'),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text('Sling Bags'),
+                      ]),
+                      Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
+                      Column(children: [
+                        CircleAvatar(
+                          radius: 34,
+                          backgroundColor: Colors.white,
+                          child: CircleAvatar(
+                            radius: 29,
+                            backgroundImage:
+                                AssetImage('assets/images/totebag.jpg'),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text('Tote Bags'),
+                      ]),
+                    ]),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Recommed for You',
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 21),
                     ),
-                  ),
+                    Text(
+                      'See More',
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 21,
+                          color: Color(0XFF35A29F)),
+                    ),
+                  ],
                 ),
-                SizedBox(
-                  height: 10,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Recommed for You',
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 21),
-                      ),
-                      Text(
-                        'See More',
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 21,
-                            color: Color(0XFF35A29F)),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: GridView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 12.0,
-                            mainAxisSpacing: 12.0,
-                            mainAxisExtent: 280),
-                    itemCount: gridMap.length,
-                    itemBuilder: (_, index) {
-                      return Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(6.0),
-                              color: Colors.white),
-                          child: Stack(children: [
-                            Column(children: [
-                              Image.network(
-                                gridMap.elementAt(index)['images'],
-                              ),
-                              SizedBox(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "${gridMap.elementAt(index)['tipe']}",
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: GridView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 12.0,
+                      mainAxisSpacing: 12.0,
+                      mainAxisExtent: 280),
+                  itemCount: gridMap.length,
+                  itemBuilder: (_, index) {
+                    return Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(6.0),
+                            color: Colors.white),
+                        child: Stack(children: [
+                          Column(children: [
+                            Image.network(
+                              gridMap.elementAt(index)['images'],
+                            ),
+                            SizedBox(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "${gridMap.elementAt(index)['tipe']}",
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "${gridMap.elementAt(index)['title']}",
+                                      style: const TextStyle(
+                                          fontWeight: FontWeight.bold),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(
-                                        "${gridMap.elementAt(index)['title']}",
-                                        style: const TextStyle(
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Align(
-                                            alignment: Alignment.topLeft,
-                                            child: Text(
-                                              "${gridMap.elementAt(index)['harga']}",
-                                              style: Theme.of(context)
-                                                  .textTheme
-                                                  .subtitle2!
-                                                  .merge(
-                                                    TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Align(
+                                          alignment: Alignment.topLeft,
+                                          child: Text(
+                                            "${gridMap.elementAt(index)['harga']}",
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .subtitle2!
+                                                .merge(
+                                                  TextStyle(
+                                                    fontWeight: FontWeight.bold,
                                                   ),
-                                            ),
+                                                ),
                                           ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "${gridMap.elementAt(index)['discount']}",
-                                            style: const TextStyle(
-                                                color: Color(0XFF35A29F),
-                                                decoration:
-                                                    TextDecoration.lineThrough),
-                                          ),
-                                        ],
-                                      ),
+                                        ),
+                                        SizedBox(
+                                          width: 20,
+                                        ),
+                                        Text(
+                                          "${gridMap.elementAt(index)['discount']}",
+                                          style: const TextStyle(
+                                              color: Color(0XFF35A29F),
+                                              decoration:
+                                                  TextDecoration.lineThrough),
+                                        ),
+                                      ],
                                     ),
-                                  ],
-                                ),
-                              )
-                            ]),
-                            Positioned(
-                              top: 8,
-                              right: 8,
-                              child: SvgPicture.asset(
-                                "assets/icons/heart.svg",
-                                color: Colors.red,
-                                width: 25,
-                                height: 25,
+                                  ),
+                                ],
                               ),
                             )
-                          ]));
-                    },
-                  ),
-                )
-              ],
-            ),
+                          ]),
+                          Positioned(
+                            top: 8,
+                            right: 8,
+                            child: SvgPicture.asset(
+                              "assets/icons/heart.svg",
+                              color: Colors.red,
+                              width: 25,
+                              height: 25,
+                            ),
+                          )
+                        ]));
+                  },
+                ),
+              )
+            ],
           ),
         ),
       ),
