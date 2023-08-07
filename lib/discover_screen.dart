@@ -12,7 +12,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
   final List<Map<String, dynamic>> gridMap = [
     {
       "title": "TAS ELIZABETH BACKPACK 0786-0002",
-      "tipe": "wallets",
+      "tipe": "Wallet",
       "harga": "\$255",
       "discount": "",
       "iconFav": true,
@@ -20,7 +20,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
           "https://elizabeth.co.id/wp-content/uploads/2023/01/0786-0002-17_2-768x768.jpg"
     },
     {
-      "title": "Wallets",
+      "title": "Wallet",
       "tipe": "wallets",
       "harga": "\$255",
       "discount": "23",
@@ -57,7 +57,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
     },
     {
       "title": "TAS ELIZABETH BACKPACK 0706-1532",
-      "tipe": "wallets",
+      "tipe": "Back pack",
       "harga": "\$255",
       "discount": "",
       "iconFav": false,
@@ -66,7 +66,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
     },
     {
       "title": "TAS ELIZABETH TOTE BAG 0022-1115",
-      "tipe": "wallets",
+      "tipe": "Tote Bag",
       "harga": "\$255",
       "discount": "30",
       "iconFav": false,

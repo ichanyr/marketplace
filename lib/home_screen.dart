@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Map<String, dynamic>> gridMap = [
     {
       "title": "TAS ELIZABETH BACKPACK 0786-0002",
-      "tipe": "Bagpack",
+      "tipe": "Bag pack",
       "harga": "\$255",
       "discount": "",
       "iconFav": true,
@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
     },
     {
       "title": "Wallets",
-      "tipe": "wallets",
+      "tipe": "Wallet",
       "harga": "\$255",
       "discount": "23",
       "iconFav": false,
@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
     },
     {
       "title": "DOMPET EMSIO BY ELIZABETH",
-      "tipe": "Wallets",
+      "tipe": "Wallet",
       "harga": "\$255",
       "discount": "25",
       "iconFav": false,
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
     },
     {
       "title": "TAS ELIZABETH BACKPACK 0706-1532",
-      "tipe": "Backpack",
+      "tipe": "Back Pack",
       "harga": "\$255",
       "discount": "",
       "iconFav": false,
@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
     },
     {
       "title": "TAS ELIZABETH TOTE BAG 0022-1115",
-      "tipe": "Totebag",
+      "tipe": "Tote bag",
       "harga": "\$255",
       "discount": "30",
       "iconFav": false,
