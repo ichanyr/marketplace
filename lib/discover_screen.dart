@@ -147,7 +147,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
                     color: Colors.amber,
                     width: 20,
                     thickness: 5,
-                    indent: 20,
+                    indent: 0,
                     endIndent: 10,
                   ),
                   GestureDetector(
