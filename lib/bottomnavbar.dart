@@ -7,6 +7,7 @@ import 'package:marketplace/filter_screen.dart';
 import 'package:marketplace/home_screen.dart';
 
 import 'api.dart';
+import 'api_cubit/views/catfact_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -20,7 +21,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
   static final List<Widget> _widgetOpstions = <Widget>[
     HomeScreen(),
     DiscoverScreen(),
-    ApiScreen()
+    ApiScreen(),
+    CatFactScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -58,6 +60,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
           BottomNavigationBarItem(
               icon: Icon(Icons.catching_pokemon),
               activeIcon: Icon(Icons.catching_pokemon),
+              label: 'API'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.catching_pokemon_outlined),
+              activeIcon: Icon(Icons.catching_pokemon_outlined),
               label: 'API'),
         ],
       ),
